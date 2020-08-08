@@ -11,6 +11,11 @@ RUN apt-get install -y cmake
 RUN apt-get install -y vim
 RUN apt-get install -y net-tools
 RUN apt-get install -y git
+RUN apt-get install -y valgrind
+RUN apt-get install -y binutils
+RUN apt-get install -y sysstat
+RUN apt-get install -y strace
+RUN apt-get install -y clang-format
 
 # Basic git settings
 RUN git config --global user.email "gch99517@gmail.com"
